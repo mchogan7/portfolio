@@ -1,0 +1,157 @@
+body{
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+header {
+	position: relative;
+}
+
+h1 {
+	display: inline-block;
+	z-index: 10000;
+	margin-left: 30px;
+	margin-top: 30px;
+	font-size: 40px;
+	height: 200px;
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	letter-spacing: 10px;
+	transition: letter-spacing 1s;
+}
+
+ul {
+	position: absolute;
+	top: 95px;
+	right: 30px;
+	display: inline-block;
+}
+
+li {
+	margin: 30px;
+	color: rgba(255,255,255,.5);
+	display: inline;
+	font-family: 'Lato', sans-serif;
+	transition: color .5s;
+}
+
+li:hover{
+	color: white !important; 
+	cursor: pointer
+}
+
+.blankHolder {
+	z-index: -180;
+	width: 100%;
+	position: absolute;
+	height: 800px;
+	top: -660px;
+	background-color: rgba(220,100,220,1);
+	mix-blend-mode: multiply;
+	animation-name: skewRand1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    transition: height 1s;
+    -webkit-transition: height 1s;
+    transition: background-color, 1s;
+    overflow-y: hidden;
+}
+
+.portfolio {
+	z-index: -120;
+	width: 100%;
+	position: absolute;
+	height: 800px;
+	top: -655px;
+	background-color: rgba(100,220,220,1);
+	mix-blend-mode: multiply;
+	animation-name: skewRand2;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    transition: height 1s;
+    -webkit-transition: height 1s;
+    transition: background-color, 1s;
+    overflow-y: hidden;
+}
+
+.portfolioActive {
+	color: rgba(100,220,220,1);
+}
+
+.contact {
+	z-index: -150;
+	width: 100%;
+	position: absolute;
+	height: 800px;
+	top: -655px;
+	background-color: rgba(220,220,100,1);
+	mix-blend-mode: multiply;
+	animation-name: skewRand3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    transition: height 1s;
+    -webkit-transition: height 1s;
+    transition: background-color, 1s;
+    overflow-y: hidden;
+}
+
+.mask {
+	z-index: -1500;
+	width: 100%;
+	position: absolute;
+	height: 800px;
+	top: -655px;
+	background-color: white;
+	transform: skewY(5deg);
+    -webkit-transition: height 1s;
+}
+
+@keyframes skewRand1 {
+    from {transform: skewY(1.5deg)}
+    to {transform: skewY(-1.5deg)}
+}
+
+@keyframes skewRand2 {
+    from {transform: skewY(-1.5deg)}
+    to {transform: skewY(1.5deg)}
+}
+
+@keyframes skewRand3 {
+    from {transform: skewY(-1deg)}
+    to {transform: skewY(2deg)}
+}
+
+
+
+.introText {
+	position: relative;
+	z-index: -10000;
+	animation: none;
+	color: rgba(74,74,74,1);
+	left: 0;
+	right: 0;
+	font-size: 20px;
+	line-height: 40px;
+	margin: auto;
+	font-family: 'Lato', sans-serif;
+	width: 70%;
+	max-width: 800px;
+}
+
+.noAnimation {
+	animation: none;
+	transform: skewY(0deg)
+}
+
+.slideHolder {
+	position: absolute;
+	top: 900px;
+	left: 15%;
+}
