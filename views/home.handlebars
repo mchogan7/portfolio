@@ -1,23 +1,31 @@
 
   
   <header>
-  <div><h1>MILLS HOGAN</h1>
+  <div class="headerContainer"><h1>MILLS HOGAN</h1>
   <ul>
     <li>ABOUT</li>
     <li>PORTFOLIO</li>
     <li>CONTACT</li>
   </ul>
+  </div>
     
     <div class="portfolio portContainer">
-            <div class="slideHolder">
-      <h1>Some of my Projects</h1>
-      <p>Here is some stuff I've done. It is all terrible.</p>
+            <div class="slideHolder portfolioMain">
+      <h2>Some of my Projects</h2>
+      <h3>Take a look through my <a class="gitLink" href="https://github.com/mchogan7" target="blank">github</a> or check out the projects below:</h3>
+
       </div>
     </div>
     <div class="contact portContainer">
-      <div class="slideHolder">
-      <h1>Contact me</h1>
-      <p>A form will go here. Nodemailer will then send me your spam.</p>
+      <div class="slideHolder contactHolder">
+      <h2>Contact Me</h2>
+      <h3>I can be reached at <a class="mailLink" href="mailto:me@millshogan.com">me@millshogan.com</a> or fill out the form below:</h3>
+      <form>
+        <input type="text" name="email" value="Email (optional)">
+        <textarea required=>Your message</textarea>
+        <button class="emailButton">SEND</button>
+      </form>
+      <div class="vanish success">MESSAGE SENT!</div>
       </div>
     </div>
     <div class="blankHolder"> </div>
