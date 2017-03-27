@@ -265,37 +265,49 @@ textarea {
 }
 
 .portfolioItem {
+	position: relative;
 	font-family: 'Lato', sans-serif;
 	color: #4A4A4A;
 	margin: auto;
 	background-color: white;
-	padding: 10px;
 	margin-bottom: 10px;
 }
 
 .portImg {
-	width: 100%;
+	display: inline-block;
+	width: 50%;
+	float: left;
 }
 
 h5 {
+	width: 40%;
+	display: inline-block;
 	margin-left: 15px;
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: 700;
 	margin-top: 10px;
 }
 
+.spacer {
+	height: 40px;
+}
+
 .itemDesc {
+	width: 40%;
+	display: inline-block;
 	margin-left: 15px;
 	padding-right: 15px;
 	opacity: .7;
 	margin-top: 10px;
+	line-height: 20px;
 }
 
 .portLinks {
+	position: absolute;
+	bottom: 60px;
+	right: 0px;
 	margin-top: 10px;
 	display: inline-block;
-	text-align: right;
-	width: 100%;
 }
 
 .mailLink {
@@ -327,7 +339,8 @@ h5 {
 	border-top: solid;
 	border-width: 1px;
 	border-color: rgba(0,0,0,.1);
-	margin-top: 20px;
+	margin-top: 0px;
+	margin-bottom: 10px;
 	display: inline-block;
 	width: 100%;
 }
@@ -423,3 +436,34 @@ li {
 }
 
 }
+
+@media (max-width: 600px) {
+	.portImg {
+		width: 100%;
+	}
+	
+	h5 {
+		width: 100%;
+	}
+
+	.itemDesc{
+		width: 90%;
+	}
+
+	.portLinks {
+		position: static;
+		width: 100%;
+		text-align: right;
+		margin-bottom: 20px;
+
+	}
+
+	}
+
+/*	.portLinks {
+	position: absolute;
+	bottom: 60px;
+	right: 0px;
+	margin-top: 10px;
+	display: inline-block;
+}*/
