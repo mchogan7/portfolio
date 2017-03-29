@@ -11,6 +11,8 @@ header {
 	width: 70%;
 }
 
+
+
 h1 {
 	display: inline-block;
 	z-index: 10000;
@@ -377,6 +379,10 @@ h5 {
 .iconWrapper {
 	display: inline-block;
 	margin-left: 10px;
+}
+
+.expand {
+	height: 2000px;
 }
 
 @media (max-width: 600px) {

@@ -5,10 +5,10 @@ $('li').on('click', function() {
     var color = $('.' + selector).css('background-color')
     if (!color) { color = 'white' }
 
-    $('.portContainer').css('height', '800px')
-    $('.mask').css('height', '800px')
-    $('.' + selector).css('height', '1400px').addClass('noAnimation')
-    $('.' + selector + 'Mask').css('height', '1400px')
+    $('.portContainer').removeClass('expand')
+    $('.mask').removeClass('expand')
+    $('.' + selector).addClass('noAnimation expand')
+    $('.' + selector + 'Mask').addClass('expand')
     $('li').css('color', 'rgba(255,255,255,.5)')
     $(this).css('color', color)
 
