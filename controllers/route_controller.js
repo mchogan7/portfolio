@@ -21,8 +21,8 @@ var nodemailer = require('nodemailer');
 let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'mills.c.hogan@gmail.com',
-        pass: 'mchez1206'
+        user: 'millsportfolio7@gmail.com',
+        pass: 'givemejob'
     }
 });
 
@@ -30,6 +30,12 @@ let transporter = nodemailer.createTransport({
 router.get("/", function(req, res) {
    res.render("home", req);
 });
+
+
+
+// router.get("/resume", function(req, res) {
+//    res.redirect('/images/giphy.Mills_Hogan_Resume.pdf')
+// }
 
 
 //Nodemailer function for feedback page
