@@ -74,6 +74,15 @@ function emailSent(){
 
 var portfolioItems = [
 	{
+		imgURL: '/images/appraiseless.jpg',
+		title: 'AppraiseLess.com',
+		desc: 'This web app helps users protest their property taxes by finding comparable properties. Users can sort through the suggested results and it will then generate a protest that can be sent to the county appraisal office.',
+		siteLink: 'http://www.appraiseless.com/',
+		gitHub: 'https://github.com/mchogan7/AppraiseLess',
+		techIcons: ['git', 'css3', 'html5', 'illustrator', 'photoshop','javascript' ,'mysql', 'nodejs', 'react']
+
+	},
+	{
 		imgURL: '/images/preshift.jpg',
 		title: 'PreShift Planner',
 		desc: 'This collaborative web app assists restaurant servers in managing and maximizing tips. It featues several ways of visualizing data as well as study aids. This is an on-going project that we hope will reach a wider audience.',
